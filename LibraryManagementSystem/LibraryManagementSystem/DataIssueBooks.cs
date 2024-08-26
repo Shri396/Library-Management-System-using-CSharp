@@ -10,7 +10,7 @@ namespace LibraryManagementSystem
 {
     class DataIssueBooks
     {
-        SqlConnection connect = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\WINDOWS 10\Documents\library.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection connect = new SqlConnection(@"Data Source=Server=RAJ\\SQLEXPRESS;Database=Library;Trusted_Connection=True;MultipleActiveResultSets=True");
 
         public int ID { set; get; }
         public string IssueID { set; get; }
